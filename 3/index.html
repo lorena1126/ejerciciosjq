@@ -15,16 +15,9 @@
     <meta charset="utf-8">
     <title></title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-
   </head>
   <body>
- 
-
-       <script>
-         $("h1").css("color", "red");
-       </script>
-
-    <h1> Hey !! </h1>
+     <h1> Hey !! </h1>
     <section class="section-1">
       <h1> Hey </h1>
       <span class="counter"> 101 </span>
@@ -70,5 +63,25 @@
 
       </fieldset>
     </form>
+
+    <script>
+         $("h1").css("color", "red");
+
+         $(".section-1").css("background" , "yellow");
+
+         C= $(".counter").text();
+         C= parseInt (C);
+         console.log (C);
+          $(".counter").text(C + 10);
+          $("row-3").on("click", function(){
+          $("#row-3").css("background-color", "gray")
+           })
+          $(".section-1 h1").css("font-size", "2rem")
+          $(".row:last-of-type").css("background-color", "red");
+          
+     </script>
+
+
+
   </body>
 </html>
